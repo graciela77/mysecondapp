@@ -1,9 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>expert</ion-title>
-  </ion-toolbar>
+  
+    <ion-toolbar color="primary">
+      <ion-title>
+        Expert
+      </ion-title>
+          <ion-buttons slot="start">
+            <ion-menu-button  color="light"></ion-menu-button>
+          </ion-buttons>
+    </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+    <ion-list *ngFor="let e of experts"> 
+        <ion-item (click)="testClick()">
+            <ion-thumbnail slot="start">
+              <img [src]="e.img">
+            </ion-thumbnail>
+            <ion-label>
+              <h2>{{e.name}}</h2>
+              <p>{{e.domain.title}}</p>
+            </ion-label>
+            <ion-icon name="star" color="warning" slot="end"></ion-icon>
+            <ion-icon name="star" color="warning" slot="end"></ion-icon>
+            <ion-icon name="star" color="warning" slot="end"></ion-icon>
+            <ion-icon name="star" color="warning" slot="end"></ion-icon>
+            <ion-icon name="star" color="warning" slot="end"></ion-icon>
+          </ion-item>
+ </ion-list>
+
 
 </ion-content>
