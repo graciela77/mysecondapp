@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'domaine', loadChildren: './pages/domaine/domaine.module#DomainePageModule' },
   { path: 'expert', loadChildren: './pages/expert/expert.module#ExpertPageModule' },
   { path: 'sign', loadChildren: './pages/sign/sign.module#SignPageModule' },
-  { path: 'help', loadChildren: './pages/help/help.module#HelpPageModule' },
+  { path: 'help', loadChildren: './pages/help/help.module#HelpPageModule' },  { path: 'experts-details', loadChildren: './pages/experts-details/experts-details.module#ExpertsDetailsPageModule' },
+
 ];
 
 @NgModule({

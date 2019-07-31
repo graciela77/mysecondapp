@@ -13,7 +13,7 @@
 
 <ion-content>
     <ion-list *ngFor="let e of experts"> 
-        <ion-item (click)="testClick()">
+        <ion-item (click)="getDetails(e.id)">
             <ion-thumbnail slot="start">
               <img [src]="e.img">
             </ion-thumbnail>
